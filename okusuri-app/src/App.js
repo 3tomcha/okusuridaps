@@ -4,6 +4,13 @@ import './App.css';
 import okusuri from './okusuri';
 import web3 from './web3';
 import jsQR from 'jsqr';
+import List from './List';
+import Register from './Register';
+import { Link, Route } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
+
 
 
 class App extends React.Component{
@@ -15,8 +22,14 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <div>新しいお薬を登録する</div>
-        <div>登録する</div>
+      <Navbar className="bg-light justify-content-between" bg="primary" variant="dark">
+      <Navbar.Brand href="/">ずっと使えるお薬手帳</Navbar.Brand>
+      <Nav className="m-0">
+      <Nav.Link href="/register" className="text-white">＋</Nav.Link>
+      </Nav>
+      </Navbar>
+      <Route exact path="/" component={List}/>
+      <Route exact path="/register" component={Register}/>
       </div>
     );
   }
