@@ -48,7 +48,7 @@ class List extends React.Component{
   }
 
   async setOkusuri(){
-    const okusuri1 = await okusuri.methods.getOkusuri().call();
+    const okusuri1 = await okusuri.methods.okusuri(0).call();
     const byouin = await okusuri.methods.hospital().call();
     const yakkyoku = await okusuri.methods.department().call();
 

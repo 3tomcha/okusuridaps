@@ -135,7 +135,7 @@ class Register extends React.Component{
     }
 
     // セッターの場合はアカウントを指定してあげる必要がある
-    await okusuri.methods.setOkusuri(okusuri_names[0],"詳細").send({
+    await okusuri.methods.setOkusuri(okusuri_names[0]).send({
       from: accounts[0]
     });
     await okusuri.methods.setHospital(byouin_name).send({
@@ -149,7 +149,7 @@ class Register extends React.Component{
   }
 
   async getOkusuri(){
-    const okusuri1 = await okusuri.methods.getOkusuri().call();
+    const okusuri1 = await okusuri.methods.okusuri(0).call();
     await console.log(okusuri1);
 
     const byouin = await okusuri.methods.hospital().call();
