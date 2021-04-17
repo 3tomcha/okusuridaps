@@ -33,6 +33,10 @@
 			{
 				"name": "_okusuri",
 				"type": "string"
+			},
+			{
+				"name": "_description",
+				"type": "string"
 			}
 		],
 		"name": "setOkusuri",
@@ -64,10 +68,10 @@
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "hospital",
+		"name": "getOkusuri",
 		"outputs": [
 			{
-				"name": "",
+				"name": "_okusuri",
 				"type": "string"
 			}
 		],
@@ -77,16 +81,11 @@
 	},
 	{
 		"constant": true,
-		"inputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "okusuri",
+		"inputs": [],
+		"name": "hospital",
 		"outputs": [
 			{
-				"name": "name",
+				"name": "",
 				"type": "string"
 			}
 		],

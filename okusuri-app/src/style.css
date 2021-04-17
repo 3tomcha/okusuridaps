@@ -1,0 +1,25 @@
+.bg-primary{
+    background-color: #17a2b8!important;
+}
+.mt1{
+  margin-top:1em;
+}
+button{
+  height: 5em;
+}
+.w100{
+  width: 100%;
+}
+.bgwhite{
+  background: white;
+}
+.text-white{
+  font-size: 2em;
+}
+.menutitle{
+  height: 2.5em;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  margin-left: 1em;
+  color:#17a2b8;
+}
