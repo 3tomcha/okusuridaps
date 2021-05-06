@@ -1,6 +1,7 @@
 function getkey(){
-  const API_key = "AIzaSyCyZhHGTR0uD9R090tRXdwCaNX69Qw3r_s";
-  const cs_key = "002644625252878384796:jzeic5exwci";
+  // keyが入っていたが、GitHubアップのため削除
+  const API_key = "";
+  const cs_key = "";
   return {API_key: API_key, cs_key: cs_key};
 }
 
