@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@walletconnect/client": "^1.7.0",
+    "@walletconnect/qrcode-modal": "^1.7.0",
     "bootstrap": "^4.3.1",
     "jsqr": "^1.2.0",
     "react": "^16.10.2",
