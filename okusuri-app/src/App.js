@@ -10,7 +10,7 @@ import { Link, Route } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-
+import Connect from './Connect';
 
 
 class App extends React.Component{
@@ -25,11 +25,12 @@ class App extends React.Component{
       <Navbar className="bg-light justify-content-between" bg="primary" variant="dark">
       <Navbar.Brand href="/">ずっと使えるお薬手帳</Navbar.Brand>
       <Nav className="m-0">
-      <Nav.Link href="/register" className="text-white">＋</Nav.Link>
+      <Nav.Link href="/connect" className="text-white">＋</Nav.Link>
       </Nav>
       </Navbar>
       <Route exact path="/" component={List}/>
       <Route exact path="/register" component={Register}/>
+      <Route exact path="/connect" component={Connect}/>
       </div>
     );
   }
