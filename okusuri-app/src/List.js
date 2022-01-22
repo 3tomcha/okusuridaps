@@ -7,7 +7,6 @@ import jsQR from 'jsqr';
 import getkey from './key';
 import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Register from './Register';
 import { Link, Route } from "react-router-dom";
 import { Navbar, Nav, Button, ButtonToolbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';

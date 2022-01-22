@@ -5,7 +5,6 @@ import okusuri from './okusuri';
 import web3 from './web3';
 import jsQR from 'jsqr';
 import List from './List';
-import Register from './Register';
 import { Link, Route } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +28,6 @@ class App extends React.Component{
       </Nav>
       </Navbar>
       <Route exact path="/" component={List}/>
-      <Route exact path="/register" component={Register}/>
       <Route exact path="/connect" component={Connect}/>
       </div>
     );
